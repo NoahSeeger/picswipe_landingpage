@@ -55,7 +55,7 @@ export default function WaitlistForm() {
           type="submit"
           className="w-full p-3 mt-3 bg-white text-black rounded-lg hover:bg-gray-100 transition-colors text-sm sm:text-base relative overflow-hidden group"
         >
-          <span className="relative z-10">Join Waitlist</span>
+          <span className="relative z-10 font-bold">Join Waitlist</span>
           <span className="absolute inset-0 bg-gradient-to-r from-white to-gray-100 opacity-0 group-hover:opacity-10 transition-opacity"></span>
         </button>
       </form>

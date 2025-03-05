@@ -7,7 +7,7 @@ import StaticGrid from "../components/StaticGrid";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-black relative overflow-hidden">
+    <div className="h-screen bg-black relative overflow-hidden font-poppins font-medium">
       {/* Static Grid */}
       <div className="absolute inset-0 z-0">
         <StaticGrid />
@@ -31,7 +31,7 @@ export default function Home() {
                 objectFit: "cover",
                 objectPosition: "top",
                 maskImage:
-                  "linear-gradient(to bottom, black 80%, transparent 100%)",
+                  "linear-gradient(to bottom, black 60%, transparent 70%)",
                 WebkitMaskImage:
                   "linear-gradient(to bottom, black 80%, transparent 100%)",
               }}
@@ -42,13 +42,13 @@ export default function Home() {
       </div>
 
       {/* Main Content */}
-      <main className="relative z-20 h-screen flex flex-col items-center justify-end pb-45 sm:pb-25 px-4">
+      <main className="fixed inset-0 z-20 flex flex-col items-center justify-end pb-25 sm:pb-20 px-4">
         {/* Title */}
         <motion.h1
           initial={{ opacity: 0, y: 200 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-3xl sm:text-4xl font-light text-white mb-4"
+          className="text-3xl sm:text-4xl font-bold text-white mb-4"
         >
           PicSwipe
         </motion.h1>
