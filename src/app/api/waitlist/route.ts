@@ -6,10 +6,7 @@ export async function POST(request: Request) {
     const { email } = await request.json();
 
     // E-Mail in die Datenbank eintragen
-    const { data, error } = await supabase
-      .from("waitlist")
-      .insert([{ email }])
-      .select();
+    const { error } = await supabase.from("waitlist").insert([{ email }]);
 
     if (error) {
       console.error("Supabase error:", error);
