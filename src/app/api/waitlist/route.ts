@@ -14,7 +14,7 @@ export async function POST(request: Request) {
     }
 
     return NextResponse.json({ message: "Successfully joined waitlist!" });
-  } catch (error) {
+  } catch {
     return NextResponse.json(
       { error: "Failed to join waitlist" },
       { status: 500 }
